@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_road_detail_margin"
+    tools:context=".feature.road_detail.RoadDetailActivity">
+
+
+    <ImageView
+        android:id="@+id/ivRoadDetailImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_detail_heigth"
+        android:scaleType="fitXY"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvRoadDetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivRoadDetailImage"
+        android:layout_marginTop="@dimen/activity_road_detail_margin"
+        android:textSize="@dimen/road_detail_name_size"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/card_color_text"
+        android:fontFamily="sans-serif-black"
+        tools:text="A-2" />
+
+    <TextView
+        android:id="@+id/tvRoadDetailDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRoadDetailName"
+        android:layout_marginTop="@dimen/activity_road_detail_margin"
+        android:layout_marginLeft="@dimen/road_detail_margin_left"
+        android:textStyle="bold"
+        android:textSize="@dimen/road_detail_date_size"
+        android:textColor="@color/black"
+        android:text="@string/detail_road_date" />
+
+    <TextView
+        android:id="@+id/tvRoadDetailDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRoadDetailName"
+        android:layout_marginLeft="@dimen/road_detail_margin_left_parent"
+        android:layout_marginTop="@dimen/activity_road_detail_margin"
+        android:textStyle="bold"
+        android:textSize="@dimen/road_detail_date_size"
+        android:textColor="@color/black"
+        tools:text="12/12/2001" />
+
+    <TextView
+        android:id="@+id/tvRoadDetailLengthText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRoadDetailDateText"
+        android:layout_marginTop="@dimen/activity_road_detail_margin"
+        android:layout_marginLeft="@dimen/road_detail_margin_left"
+        android:textStyle="bold"
+        android:textSize="@dimen/road_detail_date_size"
+        android:textColor="@color/black"
+        android:text="@string/detail_road_length" />
+
+    <TextView
+        android:id="@+id/tvRoadDetailLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRoadDetailDate"
+        android:layout_marginTop="@dimen/activity_road_detail_margin"
+        android:layout_marginLeft="@dimen/road_detail_margin_left_parent"
+        android:textStyle="bold"
+        android:textSize="@dimen/road_detail_date_size"
+        android:textColor="@color/black"
+        tools:text="1574.58" />
+
+    <TextView
+        android:id="@+id/tvRoadDetailTollText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRoadDetailLength"
+        android:layout_marginTop="@dimen/activity_road_detail_margin"
+        android:layout_marginLeft="@dimen/road_detail_margin_left"
+        android:textStyle="bold"
+        android:textSize="@dimen/road_detail_date_size"
+        android:textColor="@color/black"
+        android:text="@string/detail_road_toll_text" />
+
+    <TextView
+        android:id="@+id/tvRoadDetailToll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRoadDetailLength"
+        android:layout_marginTop="@dimen/activity_road_detail_margin"
+        android:layout_marginLeft="@dimen/road_detail_margin_left_parent"
+        android:textStyle="bold"
+        android:textSize="@dimen/road_detail_date_size"
+        android:textColor="@color/black"
+        tools:text="Si" />
+
+
+</RelativeLayout>
